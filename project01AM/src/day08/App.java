@@ -28,7 +28,7 @@ public class App {
         //     file.mkdir();
         // }
 
-
+        //Sorting using Lambda expression
         // List<Product> products = new ArrayList<>();
         
         // LocalDate dateCreated = LocalDate.of(2024, 10, 21);
@@ -46,6 +46,7 @@ public class App {
         // filteredProducts = products.stream().filter(p -> p.getProdCatogery().equals("Mobile") && (p.getPrice() > 1500.0f)).collect(Collectors.toList());
         // filteredProducts.forEach(System.out::println);
 
+        //writing to a file
         // try {
         // FileWriter fw = new FileWriter(file, false);
         // BufferedWriter bw = new BufferedWriter(fw);
@@ -63,6 +64,7 @@ public class App {
         //     System.out.println(e.getMessage());
         // }
 
+        //Sorting using Comparator exercise
         // Comparator<Product> comparator = Comparator.comparing(p -> p.getProdName());       
         // products.sort(comparator);
         // products.forEach(System.out::println);
@@ -70,7 +72,7 @@ public class App {
         // products.sort(comparator.reversed());
         // products.forEach(System.out::println);
 
-
+        //Sorting arrays exercise
         // String[] names = {"Bernard", "Zachary", "Alpha", "Theophillis", "Sammy", "Christopher"};
         
         // Arrays.sort(names);
@@ -85,6 +87,7 @@ public class App {
         //     System.out.println(na);
         // }
 
+        //Permutation exercise
         String toPermut = "ABCD";
         char[] toPermutArr = toPermut.toCharArray();
         int noOfPermuts= 1;
@@ -108,7 +111,6 @@ public class App {
                     //permutation += toPermutArr[x];
                     for (int y = 0; y < toPermutArr.length; y++){
                         if (y != x && y != i && y != j) {
-                            //List<Character> temp = new ArrayList<>();
                             permutation = String.valueOf(toPermutArr[i]);
                             permutation += String.valueOf(toPermutArr[j]);
                             permutation += String.valueOf(toPermutArr[x]);
